@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="cordova-plugin-onedrivetool" version="0.0.1" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+    <name>OneDriveTool</name>
+    <js-module name="OneDriveTool" src="www/OneDriveTool.js">
+        <clobbers target="cordova.plugins.OneDriveTool" />
+    </js-module>
+    <platform name="android">
+        <config-file parent="/*" target="res/xml/config.xml">
+            <feature name="OneDriveTool">
+                <param name="android-package" value="cordova.plugin.onedrivetool.OneDriveTool" />
+            </feature>
+        </config-file>
+        <config-file parent="/*" target="AndroidManifest.xml">
+            <uses-permission android:name="android.permission.INTERNET" />
+        </config-file>
+        <framework src="gradle/onedrive.rule" custom="true" type="gradleReference" />
+        <source-file src="src/android/OneDriveTool.java" target-dir="src/cordova/plugin/onedrivetool" />
+    </platform>
+</plugin>
