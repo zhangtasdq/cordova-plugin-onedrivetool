@@ -1,0 +1,25 @@
+{
+  "name": "cordova-plugin-onedrivetool",
+  "version": "0.0.1",
+  "description": "cordova onedrive plugin",
+  "cordova": {
+    "id": "cordova-plugin-onedrivetool",
+    "platforms": [
+      "android"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/zhangtasdq/cordova-plugin-onedrivetool.git"
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-android"
+  ],
+  "author": "zhang",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zhangtasdq/cordova-plugin-onedrivetool/issues"
+  },
+  "homepage": "https://github.com/zhangtasdq/cordova-plugin-onedrivetool#readme"
+}
